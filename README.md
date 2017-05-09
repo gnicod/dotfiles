@@ -1,2 +1,5 @@
 # dotfiles
 
+```
+stow i3
+```
