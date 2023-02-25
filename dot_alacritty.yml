@@ -897,5 +897,5 @@ font:
   size: 10
 
 import:
-  - /home/ovski/.config/alacritty-themes/dracula.yml
+  - ~/.config/alacritty-themes/dracula.yml
 
