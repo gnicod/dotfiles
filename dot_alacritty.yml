@@ -894,7 +894,7 @@
   # Highlight window damage information.
   #highlight_damage: false
 font:
-  size: 8
+  size: 10
 
 import:
   - /home/ovski/.config/alacritty-themes/dracula.yml
