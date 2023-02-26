@@ -9,13 +9,14 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 Plug 'kien/ctrlp.vim'
-Plug 'kien/ctrlp.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
 Plug 'fatih/vim-go'
 Plug 'scrooloose/syntastic'
 Plug 'mhinz/vim-startify'
 Plug 'jiangmiao/auto-pairs'
+Plug 'puremourning/vimspector'
+Plug 'vim-autoformat/vim-autoformat'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -34,6 +35,7 @@ colorscheme dracula
 
 silent! nmap <F3> :NERDTreeToggle<CR>
 
+let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 
 
 " SYNTASTIC
