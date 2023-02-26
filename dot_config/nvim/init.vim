@@ -32,6 +32,8 @@ call deoplete#custom#option('omni_patterns', {
 
 colorscheme dracula
 
+silent! nmap <F3> :NERDTreeToggle<CR>
+
 
 
 " SYNTASTIC
