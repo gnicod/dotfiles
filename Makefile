@@ -3,3 +3,4 @@ init:
 	pip install msgpack-python pynvim
 	nvim +PlugInstall +qall
 	nvim +GoInstallBinaries +qall
+	nvim +UpdateRemotePlugins +qall
