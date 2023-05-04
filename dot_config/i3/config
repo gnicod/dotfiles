@@ -184,16 +184,17 @@ bindsym $mod+r mode "resize"
 
 
 set $fstMonLaptop eDP1
-set $sndMon HDMI1
-workspace 1 output $sndMon $fstMonLaptop
-workspace 2 output $sndMon $fstMonLaptop
-workspace 3 output $sndMon $fstMonLaptop
-workspace 4 output $sndMon $fstMonLaptop
-workspace 5 output $sndMon $fstMonLaptop
-workspace 6 output $sndMon $fstMonLaptop
-workspace 7 output $sndMon $fstMonLaptop
-workspace 8 output $sndMon $fstMonLaptop
-workspace 9 output $sndMon $fstMonLaptop
+set $sndMon DP3
+set $sndMon2 HDMI1
+workspace 1 output $sndMon $sndMon1 $fstMonLaptop
+workspace 2 output $sndMon $sndMon1 $fstMonLaptop
+workspace 3 output $sndMon $sndMon1 $fstMonLaptop
+workspace 4 output $sndMon $sndMon1 $fstMonLaptop
+workspace 5 output $sndMon $sndMon1 $fstMonLaptop
+workspace 6 output $sndMon $sndMon1 $fstMonLaptop
+workspace 7 output $sndMon $sndMon1 $fstMonLaptop
+workspace 8 output $sndMon $sndMon1 $fstMonLaptop
+workspace 9 output $sndMon $sndMon1 $fstMonLaptop
 workspace 10 output $fstMonLaptop $sndMon
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -201,7 +202,8 @@ workspace 10 output $fstMonLaptop $sndMon
 # date.locale="es_ES.UTF-8"
 
 bar {
-    status_command bumblebee-status -m spotify amixer pacman battery network shell date time -p shell.command="kubectl config view --minify --output 'jsonpath={..namespace}'; echo" date.format="%a %d %B" -t dracula-powerline
+    #status_command bumblebee-status -m spotify amixer battery network shell date time -p shell.command="kubectl config view --minify --output 'jsonpath={..namespace}'; echo" date.format="%a %d %B" -t dracula-powerline
+    status_command bumblebee-status -m spotify amixer battery shell date time -p shell.command="kubectl config view --minify --output 'jsonpath={..namespace}'; echo" date.format="%a %d %B" -t dracula-powerline
     #status_command i3blocks
    
     colors {
